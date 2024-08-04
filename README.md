@@ -1,5 +1,5 @@
 # To-Do-List-App
-**Reference:** Great Stack's YouTube Tutorial
+**Reference:** GreatStack's YouTube Tutorial
 
 **Operations performed:**
 - Add tasks
