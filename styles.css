@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body, html{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff8800, #ff0084, #aa00ff);
+}
+
+/* Heading Section */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #ffccff;
+    text-shadow: 0 0 2px #380054;
+    margin: 0 auto;
+}
+
+.heading h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.heading img{
+    width: 7rem;
+    padding: 10px;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 2px #380054;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Entry Section */
+.fill-in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #ffe5ff;
+    border-radius: 50px;
+}
+
+.container input{
+    border: 0;
+    outline: 0;
+    width: 75%;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    background-color: transparent;
+}
+
+.container button{
+    border: 0;
+    width: 25%;
+    padding: 10px;
+    background-color: #ff5945;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* Task List Section */
+ul li{
+    list-style-type: none;
+    padding: 5px 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.5rem;
+    left: 10px;
+}
+
+ul li span{
+    position: absolute;
+    top: 1px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff5945;
+}
+
+ul li span:hover{
+    color: #000;
+    background-color: #ffe5ff;
+    border-radius: 50%;
+}
+
+ul li.checked{
+    color: #777;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.5rem;
+    left: 10px;
+}
