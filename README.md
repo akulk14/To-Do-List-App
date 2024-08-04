@@ -1,7 +1,7 @@
 # To-Do-List-App
-Reference: Great Stack's YouTube Tutorial
+**Reference:** Great Stack's YouTube Tutorial
 
-Operations performed:
+**Operations performed:**
 - Add tasks
 - Remove tasks
 - Mark tasks as complete
